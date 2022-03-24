@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discovering Myself</title>
+    <link rel="stylesheet" type="text/css" href="styleDiscoveringMyself.css">
+    <script type="text/javascript" src="sourceDiscoveringMyself.js"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<nav>
+    <!--             logo-->
+    <a href="http://localhost:63342/MoreAboutMyself/index.html?_ijt=eii0p2nsnputhcdgsg4tf9tpk9&_ij_reload=RELOAD_ON_SAVE#" class="logo">More about myself</a>
+    <!--             menu-->
+    <ul>
+        <li><a href="http://localhost:63342/MoreAboutMyself/index.html?_ijt=eii0p2nsnputhcdgsg4tf9tpk9&_ij_reload=RELOAD_ON_SAVE#" >Home</a></li>
+        <li><a href="http://localhost:63342/MoreAboutMyself/aboutMe/indexAboutMe.html?_ijt=b2t92ct2tqvgq3b0847si9gnc9&_ij_reload=RELOAD_ON_SAVE">About me</a></li>
+        <li><a href="#" id="active"><button class="dropbtn" onclick="myFunction()">Hobbies
+            <!--                            <i class="fa fa-caret-down"></i>-->
+        </button></a></li>
+        <div class="dropdown-content" id="myDropdown">
+            <li><a href="http://localhost:63342/MoreAboutMyself/hobbies/art/indexArt.html?_ijt=1f1ds02ngotckg0ds39o0ddsla&_ij_reload=RELOAD_ON_SAVE">Art</a></li>
+            <li><a href="http://localhost:63342/MoreAboutMyself/hobbies/healthyLifestyle/indexHealthyLifestyle.html?_ijt=o9pa7jqpet26jh4hhgrakt2nb2&_ij_reload=RELOAD_ON_SAVE">Healthy lifestyle</a><li>
+            <li><a href="#">Discovering myself</a><li>
+        </div>
+        <li><a href="http://localhost:63342/MoreAboutMyself/contact/indexContact.html?_ijt=rh3g3a59r6hnob519mm205jhi2&_ij_reload=RELOAD_ON_SAVE" >Contact</a></li>
+    </ul>
+
+</nav>
+
+<div class="main">
+    <div class="aa">
+    <img src="imagesDiscoveringMyself/undraw_Proud_coder_re_exuy.png">
+    </div>
+
+<div class="aa">
+<div class="open">
+<!--    <p>Collapsible Set:</p>-->
+    <button type="button" class="collapsible">beggining of my learning journey</button>
+    <div class="content">
+        <div class="paragraph">
+            <p class="subtitle">-2019-</p>
+            <ul>
+                <li>I still did not know what i wanted to do in my future.</li>
+                <li>I started learning maths every day to get ready for the exam i was going to take to get into university.</li>
+            </ul>
+        </div>
+
+        <div class="paragraph">
+            <p class="subtitle">-2020-</p>
+            <ul>
+                <li>Finally started my first online course. This is when i began learning informatics by myself. I started with a Python course. It was very helpful, until then i did not know anything about OOP. </li>
+                <li>After understanding this domain a little better, i started learning about front-end development.</li>
+            </ul>
+        </div>
+
+        <div class="paragraph">
+            <p class="subtitle">-2021-</p>
+            <ul>
+                <li>I tried learning HTML and CSS, although it took a long time until i understood how things work.</li>
+                <li>Also, i started learning JavaScript.</li>
+                <li>Java was a must, but i never loved it.</li>
+            </ul>
+        </div>
+    </div>
+    <button type="button" class="collapsible">current skills</button>
+    <div class="content">
+        <div class="paragraph">
+            <p class="subtitle">-2022-</p>
+            <ul>
+                <li>Tried to upgrade my skills in all domains.</li>
+                <li>Found out about UX/UI Design and feel for it.</li>
+                <li>Started a course for Adobe XD.</li>
+            </ul>
+        </div>
+    </div>
+    <button type="button" class="collapsible">plans for the future</button>
+    <div class="content">
+        <div class="paragraph">
+            <p class="subtitle">In the future</p>
+            <ul>
+                <li>Ideally, i want to become a UX/UI Designer.</li>
+                <li>I want to understand software development even better and get good at it.</li>
+                <li>I am planning to learn React and get into Illustrator, Photoshop.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+
+
+<footer>
+    <p>feel free to contact me</p>
+    <!--        socials-->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/giulia.lucaciu/"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/giulialucaciu/"><i class="fab fa-instagram"></i></a>
+    </div>
+    <!--        copyright-->
+    <p class="copyright">Copyright @giulialucaciu</p>
+</footer>
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+</script>
+</body>
+</html>
